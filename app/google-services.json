@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "865241220251",
+    "firebase_url": "https://mojaapkatraveler2.firebaseio.com",
+    "project_id": "mojaapkatraveler2",
+    "storage_bucket": "mojaapkatraveler2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:865241220251:android:078c19089b72b855",
+        "android_client_info": {
+          "package_name": "com.hfad.travelersample2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "865241220251-uusb0ku0f12a8r23mba22hhs9pi66l6l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hfad.travelersample2",
+            "certificate_hash": "c1e4dfc04a42a3b1b531dfabecf75d411777332f"
+          }
+        },
+        {
+          "client_id": "865241220251-d6e6jvs95sfve2ilrfafj6p7ko1rko1p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hfad.travelersample2",
+            "certificate_hash": "ff2b3eaa16128caff013a1629c724eac0d0f2dfa"
+          }
+        },
+        {
+          "client_id": "865241220251-pq9h1c4c42fi9us9lbooealpvvt2f0m7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtrxrryNk5um5hBnjNs2R0ZGLQ6CmVY0E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "865241220251-pq9h1c4c42fi9us9lbooealpvvt2f0m7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

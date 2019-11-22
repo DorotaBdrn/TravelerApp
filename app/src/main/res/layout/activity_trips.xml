@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TripsActivity"
+    android:background="@drawable/background">
+
+    <include
+        android:id="@+id/trips_page_toolbar"
+        layout="@layout/app_bar_layout">
+
+    </include>
+
+        <!--<Button-->
+            <!--android:id="@+id/back_button"-->
+            <!--android:layout_width="46dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_marginStart="10dp"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:background="@drawable/ic_arrow_back_black_24dp" />-->
+
+        <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/trips_profile_pic"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/trips_page_toolbar"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/profile"
+        />
+
+    <TextView
+        android:id="@+id/trips_full_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/trips_profile_pic"
+        android:layout_marginTop="10dp"
+        android:text="Full name"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/trips_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/trips_full_name"
+        android:layout_marginTop="5dp"
+        android:text="User name"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp" />
+    <LinearLayout
+        android:id="@+id/adding_trip_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/trips_user_name"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/insertTripEdit"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/input"
+        android:padding="15dp"
+        android:hint="add destiny"
+
+         />
+
+        <ImageView
+            android:id="@+id/insert_trip_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:onClick="onTripAdded"
+            android:background="@drawable/ic_add_black_24dp"
+
+            />
+
+
+    </LinearLayout>
+
+
+   <android.support.v7.widget.RecyclerView
+       android:id="@+id/tripsRecyclerView"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/adding_trip_layout"
+       android:layout_marginTop="20dp"
+
+
+
+       >
+
+
+   </android.support.v7.widget.RecyclerView>
+
+
+
+</RelativeLayout>

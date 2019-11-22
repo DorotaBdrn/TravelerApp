@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp">
+
+    <!--<TextView-->
+        <!--android:id="@+id/post_date"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Data"-->
+        <!--android:textColor="@android:color/black"-->
+        <!--android:textSize="13sp"-->
+        <!--android:visibility="gone"-->
+        <!--tools:text="@tools:sample/lorem" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/post_time"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/post_date"-->
+        <!--android:text="Time"-->
+        <!--android:textColor="@android:color/black"-->
+        <!--android:textSize="13sp"-->
+        <!--android:visibility="gone"-->
+        <!--tools:text="@tools:sample/lorem" />-->
+
+    <ImageView
+        android:id="@+id/singleDestinationPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="287dp"
+        android:layout_below="@+id/post_time"
+        android:minHeight="100dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/single_destination_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/singleDestinationPhoto"
+        android:layout_marginTop="5dp"
+        tools:text="@tools:sample/lorem" />
+
+</RelativeLayout>
